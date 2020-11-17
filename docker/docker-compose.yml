@@ -1,0 +1,17 @@
+version: "3"
+services:
+  rz_php:
+    hostname: rz_php
+    container_name: rz_php
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    working_dir: /var/www/rz
+    volumes:
+      - ../:/var/www/rz
+networks:
+  default:
+    external:
+      name: rzk_net
+
+
