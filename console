@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require dirname(__DIR__, 3) . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Dotenv\Dotenv;
+
+(new Dotenv)->loadEnv(__DIR__ . '/.env');
+
+$application = new Application();
+$application->add(new RzCommon\graphql\Command\CreateTypeCommand);
+$application->run();
