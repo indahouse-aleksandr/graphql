@@ -4,8 +4,8 @@
     "require": {
         "php": ">=7.1",
         "webonyx/graphql-php": "^0.13.0",
-        "symfony/dotenv": "^v5.1.8",
-        "symfony/monolog-bundle": "^3.3"
+        "vlucas/phpdotenv": "^5.2",
+        "monolog/monolog": "^2.1"
     },
     "require-dev": {
         "symfony/console": "^v5.1.8"
